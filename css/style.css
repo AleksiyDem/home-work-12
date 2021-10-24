@@ -1,0 +1,582 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	/* color: #000; */
+	/* font-family:""; */
+	overflow-x: hidden;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+}
+/* ------------------------------ */
+
+.block__lambo {
+	max-width: 1000px;
+	height: 1000px;
+	padding: 20px;
+	background-color: rgba(214, 210, 210, 0.596);
+}
+
+.block__lambo-body {
+	max-width: 70%;
+	min-height: 10%;
+	background-color: rgba(223, 35, 35, 0.973);
+	border-radius: 50px;
+	position: relative;
+	top: 35%;
+	left: 10%;
+}
+
+.block__hood-left {
+	max-width: 33%;
+	min-height: 10%;
+	border-radius: 100% 0% 1% 86% / 15% 0% 100% 2%;
+	background-color: rgba(214, 210, 210, 0.596);
+	position: relative;
+	top: -20%;
+	left: 10%;
+}
+
+.block__hood-right {
+	max-width: 45%;
+	min-height: 10%;
+	background-color: rgba(214, 210, 210, 0.596);
+	border-radius: 0% 100% 0% 86% / 0% 45% 43% 2%;
+	position: relative;
+	top: -30%;
+	left: 42%;
+}
+
+.block__hood-total {
+	max-width: 60%;
+	min-height: 10%;
+	border-radius: 70% 90% 8% 86% / 41% 87% 73% 2%;
+	background-color: rgba(223, 35, 35, 0.973);
+	position: relative;
+	top: 0%;
+	left: 15%;
+}
+
+.block__trunk {
+	max-width: 19%;
+	min-height: 5%;
+	background-color: rgba(223, 35, 35, 0.973);
+	transform: rotate(15deg);
+	position: relative;
+	top: -4.2%;
+	left: 72%;
+	border-radius: 25px;
+}
+
+.block__trunk-nose-top {
+	max-width: 10%;
+	min-height: 5%;
+	background-color: rgba(223, 35, 35, 0.973);
+	transform: rotate(15deg);
+	position: relative;
+	top: -6.7%;
+	left: 86%;
+	border-radius: 34% 100% 18% 100% / 0% 61% 53% 2%;
+	transform: rotate(15deg);
+}
+
+.block__lighter-forward {
+	width: 45%;
+	height: 60%;
+	background-color: rgba(230, 63, 21, 0.843);
+	position: relative;
+	top: 2px;
+	left: 10%;
+	transform: rotate(2deg);
+	border-left: 3px solid black;
+	border-bottom: 3px solid black;
+
+	border-right: 3px solid black;
+	border-radius: 5px;
+}
+
+.block__trunk-nose-bottom {
+	max-width: 5%;
+	min-height: 3%;
+	background-color: rgba(223, 35, 35, 0.973);
+	transform: rotate(15deg);
+	position: relative;
+	top: -7.1%;
+	left: 91%;
+	border-radius: 19% 100% 41% 52% / 0% 82% 47% 2%;
+	transform: rotate(2deg);
+}
+
+/* _______________________________ */
+.block__bottom {
+	max-width: 80%;
+	min-height: 6%;
+	background-color: rgba(223, 35, 35, 0.973);
+	position: relative;
+	top: -13.1%;
+	left: 14%;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 50px;
+	border-bottom: 3px solid brown;
+	-webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0),
+		0px 28px 20px -3px rgba(0, 0, 0, 0.73);
+	box-shadow: 0px 10px 13px -15px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0), 0px 28px 20px -3px rgba(0, 0, 0, 0.73);
+}
+
+.block__arch-left {
+	border-radius: 48% 49% 41% 52% / 76% 78% 0% 2%;
+	max-width: 14%;
+	min-height: 9%;
+	background-color: rgba(39, 32, 32, 0.7);
+	position: relative;
+	top: -22.1%;
+	left: 70%;
+}
+
+.block__arch-right {
+	border-radius: 48% 49% 41% 52% / 76% 78% 0% 2%;
+	max-width: 14%;
+	min-height: 9%;
+	background-color: rgba(39, 32, 32, 0.7);
+	position: relative;
+	top: -31.1%;
+	left: 17%;
+}
+
+.block__tires {
+	max-width: 10%;
+	min-height: 10%;
+	border-radius: 50%;
+	background-color: black;
+	transform: scale(1.24);
+	position: relative;
+	top: -38.4%;
+	left: 72%;
+	box-shadow: -5px 3px 10px 2px rgb(49, 48, 48);
+}
+
+.block__wheel {
+	max-width: 10%;
+	min-height: 10%;
+	border-radius: 50%;
+	background-color: rgba(245, 239, 239, 0.842);
+	position: relative;
+	top: -48.4%;
+	left: 72%;
+	z-index: 1;
+	box-shadow: inset 0px 1px 3px 2px rgb(87, 82, 82);
+}
+.block__disk {
+	width: 75%;
+	height: 75%;
+	border-radius: 50%;
+	background-color: rgba(185, 183, 189, 0.842);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 10px solid rgba(185, 183, 189, 0.982);
+	box-shadow: 0px 0px 10px 4px grey;
+}
+.block__disk-item-1 {
+	width: 40%;
+	height: 40%;
+	border-radius: 50%;
+	background-color: black;
+	border: 2px solid grey;
+	transform: translate(-5px, 6px);
+}
+.block__disk-item-2 {
+	width: 40%;
+	height: 40%;
+	border-radius: 50%;
+	background-color: black;
+	border: 2px solid grey;
+	transform: translate(0px, 12px);
+}
+.block__disk-item-3 {
+	width: 40%;
+	height: 40%;
+	border-radius: 50%;
+	background-color: black;
+	border: 2px solid grey;
+	transform: translate(26px, -6px);
+}
+.block__disk-item-4 {
+	width: 40%;
+	height: 40%;
+	border-radius: 50%;
+	background-color: black;
+	border: 2px solid grey;
+	transform: translate(38px, -51px);
+}
+
+.block__disk-item-5 {
+	width: 40%;
+	height: 40%;
+	border-radius: 50%;
+	background-color: black;
+	border: 2px solid grey;
+	transform: translate(19px, -92px);
+}
+
+.block__disk-item-center {
+	width: 25%;
+	height: 25%;
+	border-radius: 50%;
+	background-color: black;
+	border: 1px solid grey;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.block__disk-item-center-around-1 {
+	width: 13%;
+	height: 13%;
+	border-radius: 50%;
+	background-color: grey;
+	border: 1px solid black;
+	transform: translate(17.5px, -90px);
+}
+
+.block__disk-item-center-around-2 {
+	width: 13%;
+	height: 13%;
+	border-radius: 50%;
+	background-color: grey;
+	border: 1px solid black;
+	transform: translate(27.5px, -95px);
+}
+.block__disk-item-center-around-3 {
+	width: 13%;
+	height: 13%;
+	border-radius: 50%;
+	background-color: grey;
+	border: 1px solid black;
+	transform: translate(29px, -91px);
+}
+.block__disk-item-center-around-4 {
+	width: 13%;
+	height: 13%;
+	border-radius: 50%;
+	background-color: grey;
+	border: 1px solid black;
+	transform: translate(21px, -92px);
+}
+.block__disk-item-center-around-5 {
+	width: 13%;
+	height: 13%;
+	border-radius: 50%;
+	background-color: grey;
+	border: 1px solid black;
+	transform: translate(13.3px, -107px);
+}
+
+.block__tires-rear {
+	max-width: 10%;
+	min-height: 10%;
+	border-radius: 50%;
+	background-color: black;
+	transform: scale(1.24);
+	position: relative;
+	top: -58%;
+	left: 19%;
+	box-shadow: -5px 3px 10px 2px rgb(49, 48, 48);
+}
+
+.block__bumper-rear {
+	width: 14%;
+	height: 9%;
+	background-color: rgba(223, 35, 35, 0.973);
+	border-radius: 11% 0% 41% 74% / 23% 78% 5% 63%;
+	position: relative;
+	top: -69%;
+	left: 5%;
+	transform: scale(0.6, 0.6);
+}
+
+.block__bumper-tail {
+	width: 13%;
+	height: 10%;
+	background-color: rgba(223, 35, 35, 0.973);
+	border-radius: 12% 0% 25% 96% / 100% 71% 66% 53%;
+	transform: scale(0.1, 0.1);
+	position: relative;
+	top: -86%;
+	left: 6.4%;
+	transform: rotate(5deg);
+	transform: scale(0.6, 0.6);
+}
+
+.block__lighter-stop {
+	width: 13%;
+	height: 60%;
+	background-color: rgba(255, 238, 0, 0.843);
+	position: relative;
+	top: 10%;
+	left: 0%;
+	transform: rotate(2deg);
+	border-bottom: 3px solid black;
+	border-top: 3px solid black;
+	border-right: 3px solid black;
+	border-radius: 5px;
+}
+.block__hood-tail {
+	width: 35%;
+	height: 5%;
+	background-color: rgba(223, 35, 35, 0.973);
+	position: relative;
+	top: -96%;
+	left: 10%;
+	transform: rotate(-7deg);
+	border-top-right-radius: 20px;
+}
+.block__hood-tail-rellings {
+	width: 10%;
+	height: 30%;
+	background: rgb(71, 62, 62);
+	position: relative;
+	top: -10%;
+	left: 45%;
+	border-radius: 14px 35px 5px 2px;
+	border: 2px solid brown;
+}
+
+.block__hood-tail-rellings-2 {
+	width: 10%;
+	height: 30%;
+	background: rgb(71, 62, 62);
+	position: relative;
+	top: -40%;
+	left: 30%;
+	border-radius: 14px 35px 5px 2px;
+	border: 2px solid brown;
+}
+.block__hood-tail-rellings-3 {
+	width: 10%;
+	height: 30%;
+	background: rgb(71, 62, 62);
+	position: relative;
+	top: -69%;
+	left: 15%;
+	border-radius: 14px 35px 5px 2px;
+	border: 2px solid brown;
+}
+.block__roof-top {
+	width: 10%;
+	height: 3%;
+	background-color: rgba(223, 35, 35, 0.973);
+	position: relative;
+	top: -103.1%;
+	left: 43%;
+
+	border-radius: 48% 100% 0% 100% / 20% 32% 50% 10%;
+}
+
+.block__windshield {
+	width: 25%;
+	height: 3%;
+	background-color: rgba(223, 35, 35, 0.973);
+	position: relative;
+	transform: rotate(13deg);
+	top: -103%;
+	left: 51%;
+	border-radius: 20px;
+}
+
+.block__winshield-glass {
+	width: 45%;
+	height: 5%;
+	background-color: rgb(26, 26, 145);
+	position: relative;
+	transform: rotate(3deg);
+	top: -5%;
+	left: 28%;
+	border-radius: 20px;
+	transform: scale(2, 4);
+	border-radius: 30%;
+}
+
+.block__windshield-rear {
+	width: 31%;
+	height: 20%;
+	background-color: rgb(26, 26, 145);
+	position: relative;
+
+	transform: scale(0.3);
+	top: -115.5%;
+	left: 23%;
+	border-radius: 100% 0% 7% 72% / 80% 0% 24% 18%;
+	box-shadow: 10px 10px 2px 1px rgb(74, 73, 73);
+}
+
+.block__windshield-center {
+	width: 8%;
+	height: 6.3%;
+	background-color: rgb(26, 26, 145);
+	position: relative;
+
+	/* transform: scale(0.28); */
+	top: -128.5%;
+	left: 44%;
+	border-radius: 10px;
+	transform: rotate(2deg);
+}
+
+.block__windshield-front {
+	width: 20%;
+	height: 6.3%;
+	background-color: rgb(26, 26, 145);
+	position: relative;
+	top: -132.6%;
+	left: 50%;
+	border-radius: 6px;
+	transform: rotate(13deg);
+	overflow: hidden;
+	/* box-shadow: 0px 0px 1px 0.5px rgb(74, 73, 73);
+	border-left-style: none; */
+}
+
+.block__mirror-carbon {
+	width: 40%;
+	height: 90%;
+	background-color: black;
+	position: relative;
+	top: 0%;
+	left: 78%;
+	border: 3px solid rgb(68, 53, 53);
+}
+
+.block__scissors-door {
+	width: 10.5%;
+	height: 4.5%;
+	background-color: rgba(223, 35, 35, 0.973);
+	position: relative;
+	top: -134.5%;
+	left: 62%;
+	border-radius: 6px;
+	transform: rotate(-25deg);
+	overflow: hidden;
+}
+.block__mirror {
+	width: 53%;
+	height: 60%;
+
+	background: url("../img/icons/icon.png");
+	transform: translate(60px, 5px) rotate3d(1, 7, 6, 60deg);
+	border-radius: 10px;
+}
+
+.block__mirror-carbone {
+	width: 5%;
+	height: 2%;
+	background: -webkit-linear-gradient(
+		45deg,
+		#434545 -1%,
+		#5e6162 0%,
+		#434545 0%,
+		#434545 6%,
+		#434545 8%,
+		#434545 8%,
+		#5e6261 16%,
+		#5e6162 18%,
+		#5e6162 18%,
+		#5e6162 23%,
+		#5e6162 23%,
+		#686c6c 25%,
+		#686c6c 25%,
+		#5e6162 28%,
+		#5e6162 28%,
+		#6e7272 38%,
+		#6e7272 49%,
+		#757b7a 50%,
+		#757b7a 50%,
+		#949696 63%,
+		#a6a8a8 68%,
+		#a6a8a8 68%,
+		#a6a8a8 80%
+	);
+	position: relative;
+	top: -141.5%;
+	left: 62%;
+	transform: rotate3d(5, 10, 2, 35deg);
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 15px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 5px;
+}
+
+.block__lighter {
+	width: 1%;
+	height: 1%;
+	border-radius: 50%;
+	background-color: rgb(199, 199, 46);
+	border: 1px solid grey;
+
+	position: relative;
+	top: -137%;
+	left: 84%;
+}
+
+.block__fuel-tank {
+	width: 4%;
+	height: 2%;
+	border: 1px solid black;
+	box-shadow: 0px 0px 1px 0.5px rgb(74, 73, 73);
+	position: relative;
+	top: -142%;
+	left: 30%;
+	border-radius: 15% 15% 10% 45% / 29% 10% 11% 89%;
+}
+
+.block__bolt {
+	width: 11%;
+	height: 2%;
+	border: 1px solid black;
+	position: relative;
+}
